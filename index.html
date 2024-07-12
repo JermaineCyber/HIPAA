@@ -5,17 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIPAA Compliance Framework</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 20px;
         }
         th, td {
-            border: 1px solid #000;
-            padding: 8px;
+            border: 1px solid #ddd;
+            padding: 10px;
             text-align: left;
+            vertical-align: top;
         }
         th {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
             background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .privacy-rule {
+            background-color: #ffe6e6;
+        }
+        .security-rule {
+            background-color: #e6f7ff;
+        }
+        .physical-safeguards {
+            background-color: #e6ffe6;
+        }
+        .technical-safeguards {
+            background-color: #fff5e6;
+        }
+        .breach-notification-rule {
+            background-color: #ffe6f7;
+        }
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
@@ -23,202 +71,206 @@
     <h1>HIPAA Compliance Framework</h1>
     <p>HIPAA (Health Insurance Portability and Accountability Act) plays a critical role in safeguarding the privacy and security of patients' health information. The framework ensures that all healthcare entities implement rigorous policies and procedures to protect sensitive health data from unauthorized access and breaches. It enforces the principle of minimum necessary use, ensuring that only essential information is disclosed or accessed, thereby reducing the risk of data exposure. The act mandates comprehensive security measures, including administrative, physical, and technical safeguards, which collectively fortify the healthcare ecosystem against potential threats. HIPAA also empowers patients by granting them rights over their health information, including access, amendments, and accounting of disclosures, fostering transparency and trust in healthcare services. By adhering to HIPAA regulations, healthcare organizations not only comply with federal laws but also build a robust foundation for protecting patient privacy and maintaining data integrity, which is paramount in today's digital age.</p>
     <table>
-        <tr>
-            <th>Rule</th>
-            <th>Standard/Implementation Specification</th>
-            <th>Control</th>
-            <th>Description</th>
-            <th>Implementation Details</th>
-        </tr>
-        <tr>
-            <td>Privacy Rule</td>
-            <td>Privacy Rule Overview</td>
-            <td>Privacy Policies and Procedures</td>
-            <td>Develop and implement written privacy policies and procedures.</td>
-            <td>Ensure policies cover how PHI (Protected Health Information) is accessed, used, and disclosed. Regularly review and update policies to reflect changes in law or technology. Train staff on these policies.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Notice of Privacy Practices (NPP)</td>
-            <td>Notice Distribution</td>
-            <td>Provide a notice of privacy practices to patients.</td>
-            <td>Distribute NPPs to all patients and make them available on the organization’s website. Provide NPPs at the first service encounter and upon request. Update and redistribute NPPs when there are significant changes.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Minimum Necessary Rule</td>
-            <td>Minimum Necessary Standard</td>
-            <td>Limit the use and disclosure of PHI to the minimum necessary to accomplish the intended purpose.</td>
-            <td>Implement policies that ensure only the minimum necessary information is accessed or disclosed. Conduct regular audits to ensure compliance with the minimum necessary standard.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Patient Rights</td>
-            <td>Access to PHI</td>
-            <td>Provide patients with the right to access their PHI.</td>
-            <td>Establish processes to handle patient requests for access to their health information. Verify identity before providing access. Provide information in the format requested by the patient, if possible.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Amendments to PHI</td>
-            <td>Allow patients to request amendments to their PHI.</td>
-            <td>Implement procedures for patients to request changes to their PHI and ensure amendments are documented. Respond to amendment requests within a specified timeframe.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Accounting of Disclosures</td>
-            <td>Maintain a record of PHI disclosures for purposes other than treatment, payment, or healthcare operations.</td>
-            <td>Develop and maintain an accounting of disclosures log and provide it to patients upon request. Include details such as the date, recipient, and purpose of the disclosure.</td>
-        </tr>
-        <tr>
-            <td>Security Rule</td>
-            <td>Administrative Safeguards</td>
-            <td>Security Management Process</td>
-            <td>Implement policies and procedures to prevent, detect, contain, and correct security violations.</td>
-            <td>Conduct regular risk analyses, implement risk management policies, and monitor compliance. Develop and enforce a risk management plan addressing identified risks.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Assigned Security Responsibility</td>
-            <td>Designate a security official responsible for developing and implementing security policies and procedures.</td>
-            <td>Appoint a Chief Information Security Officer (CISO) or equivalent role to oversee security. Clearly define the security official's responsibilities and authority.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Workforce Security</td>
-            <td>Implement policies to ensure that all members of the workforce have appropriate access to ePHI.</td>
-            <td>Develop access control policies and conduct regular workforce training on security protocols. Ensure workforce clearance procedures and appropriate termination procedures.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Information Access Management</td>
-            <td>Implement policies to authorize access to ePHI.</td>
-            <td>Use role-based access controls (RBAC) to grant and manage access to ePHI. Regularly review and update access controls based on role changes or employment status.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Security Awareness and Training</td>
-            <td>Implement security awareness and training programs for all workforce members.</td>
-            <td>Conduct regular training sessions and phishing simulations to raise awareness. Ensure training is ongoing and covers new threats and technologies.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Security Incident Procedures</td>
-            <td>Implement procedures to address security incidents.</td>
-            <td>Develop and document an incident response plan, including detection, response, and mitigation processes. Regularly test and update the incident response plan.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Contingency Plan</td>
-            <td>Establish policies and procedures for responding to emergencies or other occurrences that damage systems containing ePHI.</td>
-            <td>Develop and test disaster recovery and business continuity plans to ensure the availability of ePHI. Include data backup and recovery procedures.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Evaluation</td>
-            <td>Perform periodic evaluations of security policies and procedures.</td>
-            <td>Conduct regular audits and reviews to assess the effectiveness of security measures. Use audit results to improve security practices.</td>
-        </tr>
-        <tr>
-            <td>Physical Safeguards</td>
-            <td>Facility Access Controls</td>
-            <td>Facility Access Controls</td>
-            <td>Implement policies to limit physical access to electronic information systems and the facilities in which they are housed.</td>
-            <td>Use physical security controls such as key cards, biometric scanners, and security guards. Monitor and document physical access to facilities.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Workstation Use</td>
-            <td>Implement policies to specify the proper functions to be performed on workstations and secure their use.</td>
-            <td>Define acceptable use policies for workstations and ensure they are located in secure areas. Regularly review and update workstation use policies.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Workstation Security</td>
-            <td>Implement physical safeguards for all workstations that access ePHI.</td>
-            <td>Use locking mechanisms and security cables to physically secure workstations. Ensure workstations are positioned to minimize unauthorized viewing of ePHI.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Device and Media Controls</td>
-            <td>Implement policies and procedures for the receipt and removal of hardware and electronic media that contain ePHI.</td>
-            <td>Develop procedures for the secure disposal, reuse, and backup of devices and media containing ePHI. Use encryption and data wiping for secure disposal and reuse.</td>
-        </tr>
-        <tr>
-            <td>Technical Safeguards</td>
-            <td>Access Control</td>
-            <td>Access Control</td>
-            <td>Implement technical policies to allow access to ePHI only to authorized persons or software programs.</td>
-            <td>Use authentication mechanisms, such as passwords and biometrics, and implement access control lists (ACLs). Regularly review and update access controls.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Audit Controls</td>
-            <td>Implement hardware, software, and/or procedural mechanisms to record and examine access and other activity in systems containing ePHI.</td>
-            <td>Use logging and monitoring solutions to capture and review audit logs. Regularly review audit logs to detect and respond to suspicious activity.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Integrity</td>
-            <td>Implement policies and procedures to protect ePHI from improper alteration or destruction.</td>
-            <td>Use data integrity tools, such as checksums and hashing, to verify the integrity of ePHI. Regularly verify data integrity and investigate any discrepancies.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Person or Entity Authentication</td>
-            <td>Implement procedures to verify that a person or entity seeking access to ePHI is the one claimed.</td>
-            <td>Use multi-factor authentication (MFA) to verify user identities. Regularly review and update authentication mechanisms.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Transmission Security</td>
-            <td>Implement technical security measures to guard against unauthorized access to ePHI transmitted over an electronic network.</td>
-            <td>Use encryption protocols, such as TLS, to secure ePHI during transmission. Regularly review and update transmission security measures.</td>
-        </tr>
-        <tr>
-            <td>Breach Notification Rule</td>
-            <td>Breach Notification</td>
-            <td>Notification to Individuals</td>
-            <td>Notify affected individuals following the discovery of a breach of unsecured PHI.</td>
-            <td>Develop and implement a breach notification policy and procedure, including a communication plan for affected individuals. Notify affected individuals promptly and provide them with relevant information and steps they can take.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Notification to HHS</td>
-            <td>Notify the Secretary of Health and Human Services (HHS) of breaches of unsecured PHI.</td>
-            <td>Use the HHS breach reporting portal to submit notifications as required. Ensure timely and accurate reporting of breaches to HHS.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Notification to Media</td>
-            <td>Notify the media in cases where a breach affects more than 500 residents of a state or jurisdiction.</td>
-            <td>Develop a media communication plan for large-scale breaches and ensure timely notification. Prepare a press release and other communication materials in advance.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Content of Notification</td>
-            <td>Include specific content in the notification, such as a description of the breach, the types of information involved, and steps individuals should take.</td>
-            <td>Ensure breach notifications contain all required information and are delivered promptly. Provide clear and concise information to affected individuals.</td>
-        </tr>
+        <thead>
+            <tr class="sticky-header">
+                <th>Rule</th>
+                <th>Standard/Implementation Specification</th>
+                <th>Control</th>
+                <th>Description</th>
+                <th>Implementation Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="privacy-rule">
+                <td>Privacy Rule</td>
+                <td>Privacy Rule Overview</td>
+                <td>Privacy Policies and Procedures</td>
+                <td>Develop and implement written privacy policies and procedures.</td>
+                <td>Ensure policies cover how PHI (Protected Health Information) is accessed, used, and disclosed. Regularly review and update policies to reflect changes in law or technology. Train staff on these policies.</td>
+            </tr>
+            <tr class="privacy-rule">
+                <td></td>
+                <td>Notice of Privacy Practices (NPP)</td>
+                <td>Notice Distribution</td>
+                <td>Provide a notice of privacy practices to patients.</td>
+                <td>Distribute NPPs to all patients and make them available on the organization’s website. Provide NPPs at the first service encounter and upon request. Update and redistribute NPPs when there are significant changes.</td>
+            </tr>
+            <tr class="privacy-rule">
+                <td></td>
+                <td>Minimum Necessary Rule</td>
+                <td>Minimum Necessary Standard</td>
+                <td>Limit the use and disclosure of PHI to the minimum necessary to accomplish the intended purpose.</td>
+                <td>Implement policies that ensure only the minimum necessary information is accessed or disclosed. Conduct regular audits to ensure compliance with the minimum necessary standard.</td>
+            </tr>
+            <tr class="privacy-rule">
+                <td></td>
+                <td>Patient Rights</td>
+                <td>Access to PHI</td>
+                <td>Provide patients with the right to access their PHI.</td>
+                <td>Establish processes to handle patient requests for access to their health information. Verify identity before providing access. Provide information in the format requested by the patient, if possible.</td>
+            </tr>
+            <tr class="privacy-rule">
+                <td></td>
+                <td></td>
+                <td>Amendments to PHI</td>
+                <td>Allow patients to request amendments to their PHI.</td>
+                <td>Implement procedures for patients to request changes to their PHI and ensure amendments are documented. Respond to amendment requests within a specified timeframe.</td>
+            </tr>
+            <tr class="privacy-rule">
+                <td></td>
+                <td></td>
+                <td>Accounting of Disclosures</td>
+                <td>Maintain a record of PHI disclosures for purposes other than treatment, payment, or healthcare operations.</td>
+                <td>Develop and maintain an accounting of disclosures log and provide it to patients upon request. Include details such as the date, recipient, and purpose of the disclosure.</td>
+            </tr>
+            <tr class="security-rule">
+                <td>Security Rule</td>
+                <td>Administrative Safeguards</td>
+                <td>Security Management Process</td>
+                <td>Implement policies and procedures to prevent, detect, contain, and correct security violations.</td>
+                <td>Conduct regular risk analyses, implement risk management policies, and monitor compliance. Develop and enforce a risk management plan addressing identified risks.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Assigned Security Responsibility</td>
+                <td>Designate a security official responsible for developing and implementing security policies and procedures.</td>
+                <td>Appoint a Chief Information Security Officer (CISO) or equivalent role to oversee security. Clearly define the security official's responsibilities and authority.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Workforce Security</td>
+                <td>Implement policies to ensure that all members of the workforce have appropriate access to ePHI.</td>
+                <td>Develop access control policies and conduct regular workforce training on security protocols. Ensure workforce clearance procedures and appropriate termination procedures.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Information Access Management</td>
+                <td>Implement policies to authorize access to ePHI.</td>
+                <td>Use role-based access controls (RBAC) to grant and manage access to ePHI. Regularly review and update access controls based on role changes or employment status.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Security Awareness and Training</td>
+                <td>Implement security awareness and training programs for all workforce members.</td>
+                <td>Conduct regular training sessions and phishing simulations to raise awareness. Ensure training is ongoing and covers new threats and technologies.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Security Incident Procedures</td>
+                <td>Implement procedures to address security incidents.</td>
+                <td>Develop and document an incident response plan, including detection, response, and mitigation processes. Regularly test and update the incident response plan.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Contingency Plan</td>
+                <td>Establish policies and procedures for responding to emergencies or other occurrences that damage systems containing ePHI.</td>
+                <td>Develop and test disaster recovery and business continuity plans to ensure the availability of ePHI. Include data backup and recovery procedures.</td>
+            </tr>
+            <tr class="security-rule">
+                <td></td>
+                <td></td>
+                <td>Evaluation</td>
+                <td>Perform periodic evaluations of security policies and procedures.</td>
+                <td>Conduct regular audits and reviews to assess the effectiveness of security measures. Use audit results to improve security practices.</td>
+            </tr>
+            <tr class="physical-safeguards">
+                <td>Physical Safeguards</td>
+                <td>Facility Access Controls</td>
+                <td>Facility Access Controls</td>
+                <td>Implement policies to limit physical access to electronic information systems and the facilities in which they are housed.</td>
+                <td>Use physical security controls such as key cards, biometric scanners, and security guards. Monitor and document physical access to facilities.</td>
+            </tr>
+            <tr class="physical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Workstation Use</td>
+                <td>Implement policies to specify the proper functions to be performed on workstations and secure their use.</td>
+                <td>Define acceptable use policies for workstations and ensure they are located in secure areas. Regularly review and update workstation use policies.</td>
+            </tr>
+            <tr class="physical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Workstation Security</td>
+                <td>Implement physical safeguards for all workstations that access ePHI.</td>
+                <td>Use locking mechanisms and security cables to physically secure workstations. Ensure workstations are positioned to minimize unauthorized viewing of ePHI.</td>
+            </tr>
+            <tr class="physical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Device and Media Controls</td>
+                <td>Implement policies and procedures for the receipt and removal of hardware and electronic media that contain ePHI.</td>
+                <td>Develop procedures for the secure disposal, reuse, and backup of devices and media containing ePHI. Use encryption and data wiping for secure disposal and reuse.</td>
+            </tr>
+            <tr class="technical-safeguards">
+                <td>Technical Safeguards</td>
+                <td>Access Control</td>
+                <td>Access Control</td>
+                <td>Implement technical policies to allow access to ePHI only to authorized persons or software programs.</td>
+                <td>Use authentication mechanisms, such as passwords and biometrics, and implement access control lists (ACLs). Regularly review and update access controls.</td>
+            </tr>
+            <tr class="technical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Audit Controls</td>
+                <td>Implement hardware, software, and/or procedural mechanisms to record and examine access and other activity in systems containing ePHI.</td>
+                <td>Use logging and monitoring solutions to capture and review audit logs. Regularly review audit logs to detect and respond to suspicious activity.</td>
+            </tr>
+            <tr class="technical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Integrity</td>
+                <td>Implement policies and procedures to protect ePHI from improper alteration or destruction.</td>
+                <td>Use data integrity tools, such as checksums and hashing, to verify the integrity of ePHI. Regularly verify data integrity and investigate any discrepancies.</td>
+            </tr>
+            <tr class="technical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Person or Entity Authentication</td>
+                <td>Implement procedures to verify that a person or entity seeking access to ePHI is the one claimed.</td>
+                <td>Use multi-factor authentication (MFA) to verify user identities. Regularly review and update authentication mechanisms.</td>
+            </tr>
+            <tr class="technical-safeguards">
+                <td></td>
+                <td></td>
+                <td>Transmission Security</td>
+                <td>Implement technical security measures to guard against unauthorized access to ePHI transmitted over an electronic network.</td>
+                <td>Use encryption protocols, such as TLS, to secure ePHI during transmission. Regularly review and update transmission security measures.</td>
+            </tr>
+            <tr class="breach-notification-rule">
+                <td>Breach Notification Rule</td>
+                <td>Breach Notification</td>
+                <td>Notification to Individuals</td>
+                <td>Notify affected individuals following the discovery of a breach of unsecured PHI.</td>
+                <td>Develop and implement a breach notification policy and procedure, including a communication plan for affected individuals. Notify affected individuals promptly and provide them with relevant information and steps they can take.</td>
+            </tr>
+            <tr class="breach-notification-rule">
+                <td></td>
+                <td></td>
+                <td>Notification to HHS</td>
+                <td>Notify the Secretary of Health and Human Services (HHS) of breaches of unsecured PHI.</td>
+                <td>Use the HHS breach reporting portal to submit notifications as required. Ensure timely and accurate reporting of breaches to HHS.</td>
+            </tr>
+            <tr class="breach-notification-rule">
+                <td></td>
+                <td></td>
+                <td>Notification to Media</td>
+                <td>Notify the media in cases where a breach affects more than 500 residents of a state or jurisdiction.</td>
+                <td>Develop a media communication plan for large-scale breaches and ensure timely notification. Prepare a press release and other communication materials in advance.</td>
+            </tr>
+            <tr class="breach-notification-rule">
+                <td></td>
+                <td></td>
+                <td>Content of Notification</td>
+                <td>Include specific content in the notification, such as a description of the breach, the types of information involved, and steps individuals should take.</td>
+                <td>Ensure breach notifications contain all required information and are delivered promptly. Provide clear and concise information to affected individuals.</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
